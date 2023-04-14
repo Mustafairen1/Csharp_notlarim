@@ -6,6 +6,7 @@ Müfredat boyunca yeni proje oluşturduğunuz zaman sağ tarafında  (.net frame
 **adım 1**
  google'a girip Visual studio 2022 yazıp en üstten çıkan linke girerek proffesonal'i indirin.
 ("ben daha çok beğendiğimden community indirdim.")
+
 **adım 2**
 Visual Studio'u türkçe kullanmaktan kaçının, ingilizce kullanın, çünkü programlamanın evrensel dili ingilizcedir.
 ### 3. Visual studio genel bakış

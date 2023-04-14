@@ -1,5 +1,4 @@
-# Csharp_notlarim
-
+# 1. 2022 güncellemesi içeriği
 ## 1. 2022 güncellemesi içeriği
 Müfredat boyunca yeni proje oluşturduğunuz zaman sağ tarafında  (.net framework) işlemi yapacağız.
 ### 2. Visual Studio indirme ve kurulum
@@ -68,7 +67,81 @@ button 1'e çift tıklayın bizim için önemli olan button click 1'in altındak
 ##### bunlar neyi ifade ediyor?
 şimdi "message=meşaj  "box=kutu "show=göster demek, yani MeşajKutusu.göster
 ("") ise ekrana yansıtacağımız yazının girileceği yerdir. ; ise program satırımızı kapatmamıza yarayan bir koddur.
+<<<<<<< Updated upstream
 ### 5. label ve textbox kullanımı 
 
 
 
+=======
+### 5. label ve textbox kullanımı
+**adım 1**
+1 tane label oluşturalım, label'in fontunu biraz büyütelim.
+1 tanede buton oluşturalım, önceki butonu sağ üste alalım, yeni butonuda label'in yanına eşit ve simetrik olacak şekilde alalım ve büyütelim, formun ismini değişip "araç kullanımları" yapalım, ve arkaplan renginide pembe yapalım, böylece her yeni programda bir değişiklik olsun.
+**adım 2**
+label'i "adınız" olarak değiştirelim, buttonu'da "yazdır" olarak değiştirelim.
+ve adınız'ın yanına 1 label daha oluşturup fontunu "Bold" yani kalın olarak değiştirelim.
+**adım 3**
+şimdi biz bu botuna bastığımızda label2'e adımızı girmesini sağlayalım.
+
+    label2.text="Baran";
+evet yazdır butonuna bastığımızda tırnak içerisindeki yazı label2'e geçiyor.
+
+**adım 4**
+şimdi bunu tatlı bir uygulamaya çevirelim, 1 tane daha buton ekliyoruz ve 6 tanede label ekliyoruz, form'mumuzu biraz daha büyütüp butonu aşağıya üstede 6 tane label'imizi karşı karşıya diziyoruz, ve 6 labeli aynı anda seçiyoruz fontunu değiştiriyoruz.
+şimdi butonun ismini bilgi getir yapıyoruz, arkaplan renginide kafanıza göre değişiyorsunuz.
+###### dipnot: ama arkaplana katien uyumlu bir renk olmalı, yoksa gözünüz üzülebilir."
+
+şimdi
+label 6 adı
+label 7 soy adı
+label 8 mesleğini getireceğiz
+
+ona görede sol tarafındaki labelleri şöyle değiştirmeliyiz
+
+label 3 / adınız:
+label 4 / soyadınız:
+label 5/ mesleğiniz:
+
+şimdi 3 4 5 labellerini seçip sağ kısma hizalıyoruz.
+
+label 6 7 8'i de biraz sağ kaydırıyoruz ki, çirkin gözükmesinler.
+
+şimdi kodları yapalım
+
+    label6.text="Emel";
+    label7.text="Öztürk";
+    label8.text="Öğretmen";
+
+böylece  bilgi getire tıkladığımızda 3 tane label'e aynı anda veri yazdırabiliyoruz.
+
+
+
+
+##### label nedir?
+label türkçede etiket karşılığı okarak çevirebiliceğimiz bir araçtır, bize bilgiler sağlar.
+
+örnek: bir mağzaya gittik mesela koton mağzası, 2 kişi karşılıklı olarak duruyoruz kiyafetin renginden tut herşeyini bilebilirsiniz, fakat fiyatını asla bilemezsiniz, işte burdada etiketler size yardımcı olur ve fiyatını yazar, aynı şey internet içinde geçerlidir, programlar içinde geçerlidir.
+
+**adım 5**
+şimdi bir textbox ekliyoruz, sonrada altınada 1 tane buton ekliyoruz.
+butonun ismini aktar yapıyoruz.
+  
+
+       textbox1.text="Yazılım mühendisliği";
+
+bu şekildede normalde klavye ile veri alınan yere bir buton yardımıyla veri yazdırabiliyoruz, fakat bu textbox'a bizim yazdığımız yazıyı bir label'e yazdırmak için şunu yapabiliriz.
+
+       label9.text=textbox1.text;
+
+şimdi nereye yazdırıcaksanız o bölüm sol taraftta
+yani label9 şu an text box'tan yazı verileceği yer   yazacağımız bölge de sağda olmalı yani textbox1
+
+textbox'a birşey yazdığınızda aktar bastığınızda veri label'e gidicektir, ama boş bir yazı ile bastığınızda o veri yine label'e gider, ama kaybolmaz null değer olarak yazılır, yani bilinmeyen değer olarak yazılır.
+
+##### textbox nedir?
+textbox türkçede metin kutusu olarak geçiyor.
+
+textbox ile klavyeden veri girebiliyorsunuz, mesela kullanım alanları şu şekilde olabilir, google üzerinde arama menüsüne klavye ile veri giriyorsunuz, veya instagram, facebook, youtube hesaplarınıza giriş yapabiliyorsunuz.
+
+### 6.ComboBox ve ListBox Araçları kullanımı.
+>>>>>>> Stashed changes

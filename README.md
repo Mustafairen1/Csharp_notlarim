@@ -1,4 +1,4 @@
-# 1. 2022 güncellemesi içeriği
+# Csharp_notlarim
 ## 1. 2022 güncellemesi içeriği
 Müfredat boyunca yeni proje oluşturduğunuz zaman sağ tarafında  (.net framework) işlemi yapacağız.
 ### 2. Visual Studio indirme ve kurulum
@@ -67,12 +67,6 @@ button 1'e çift tıklayın bizim için önemli olan button click 1'in altındak
 ##### bunlar neyi ifade ediyor?
 şimdi "message=meşaj  "box=kutu "show=göster demek, yani MeşajKutusu.göster
 ("") ise ekrana yansıtacağımız yazının girileceği yerdir. ; ise program satırımızı kapatmamıza yarayan bir koddur.
-<<<<<<< Updated upstream
-### 5. label ve textbox kullanımı 
-
-
-
-=======
 ### 5. label ve textbox kullanımı
 **adım 1**
 1 tane label oluşturalım, label'in fontunu biraz büyütelim.
@@ -144,4 +138,3 @@ textbox türkçede metin kutusu olarak geçiyor.
 textbox ile klavyeden veri girebiliyorsunuz, mesela kullanım alanları şu şekilde olabilir, google üzerinde arama menüsüne klavye ile veri giriyorsunuz, veya instagram, facebook, youtube hesaplarınıza giriş yapabiliyorsunuz.
 
 ### 6.ComboBox ve ListBox Araçları kullanımı.
->>>>>>> Stashed changes

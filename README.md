@@ -14,3 +14,4 @@ Visual Studio Microsoft'un geliştirdiği bir programlama dili derleyicisidir.
 #### Derleyici nedir?
 bizim yazdığımız kodları makine diline çevirip sonra onlarıda anlaşılır formatta karşımıza çıkaran programlardır.
 ## 2. Temel araç kullanımları.
+### 4. Merhaba dünya

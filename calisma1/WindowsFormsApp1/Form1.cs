@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,7 +45,7 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Merhaba başvurunuz bize ulaştı, sizin başvurunuzu inceledikten sonra size ulaşmamız için gmail addressinizi gireceğiniz menüye sizi yönlendiriyorum");
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -55,6 +56,21 @@ namespace WindowsFormsApp1
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            soyadiniz.Text = yazi2.Text;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            mesleginiz.Text = yazi3.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            yasiniz.Text = yazi4.Text;
         }
     }
 }

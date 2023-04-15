@@ -31,17 +31,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.yazi2 = new System.Windows.Forms.TextBox();
             this.adiniz = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.soyadiniz = new System.Windows.Forms.Label();
+            this.yasiniz = new System.Windows.Forms.Label();
+            this.mesleginiz = new System.Windows.Forms.Label();
             this.yazi1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.yazi4 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.yazi3 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Devam1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -77,13 +77,14 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox2
+            // yazi2
             // 
-            this.textBox2.Location = new System.Drawing.Point(9, 407);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(110, 20);
-            this.textBox2.TabIndex = 7;
+            this.yazi2.Location = new System.Drawing.Point(9, 407);
+            this.yazi2.Name = "yazi2";
+            this.yazi2.Size = new System.Drawing.Size(110, 20);
+            this.yazi2.TabIndex = 7;
             // 
             // adiniz
             // 
@@ -96,37 +97,37 @@
             this.adiniz.Text = "Lütfen adınızı girin.";
             this.adiniz.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // soyadiniz
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(125, 407);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 19);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Lütfen soy adınızı girin.";
+            this.soyadiniz.AutoSize = true;
+            this.soyadiniz.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.soyadiniz.Location = new System.Drawing.Point(125, 407);
+            this.soyadiniz.Name = "soyadiniz";
+            this.soyadiniz.Size = new System.Drawing.Size(159, 19);
+            this.soyadiniz.TabIndex = 12;
+            this.soyadiniz.Text = "Lütfen soy adınızı girin.";
             // 
-            // label4
+            // yasiniz
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(125, 201);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 19);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Lütfen yaşınızı girin.";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.yasiniz.AutoSize = true;
+            this.yasiniz.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.yasiniz.Location = new System.Drawing.Point(125, 201);
+            this.yasiniz.Name = "yasiniz";
+            this.yasiniz.Size = new System.Drawing.Size(138, 19);
+            this.yasiniz.TabIndex = 13;
+            this.yasiniz.Text = "Lütfen yaşınızı girin.";
+            this.yasiniz.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // mesleginiz
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(125, 298);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 19);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Lütfen mesleğinizi söyleyin.";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.mesleginiz.AutoSize = true;
+            this.mesleginiz.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mesleginiz.Location = new System.Drawing.Point(125, 298);
+            this.mesleginiz.Name = "mesleginiz";
+            this.mesleginiz.Size = new System.Drawing.Size(188, 19);
+            this.mesleginiz.TabIndex = 14;
+            this.mesleginiz.Text = "Lütfen mesleğinizi söyleyin.";
+            this.mesleginiz.Click += new System.EventHandler(this.label5_Click);
             // 
             // yazi1
             // 
@@ -135,12 +136,12 @@
             this.yazi1.Size = new System.Drawing.Size(110, 20);
             this.yazi1.TabIndex = 16;
             // 
-            // textBox3
+            // yazi4
             // 
-            this.textBox3.Location = new System.Drawing.Point(9, 202);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(110, 20);
-            this.textBox3.TabIndex = 18;
+            this.yazi4.Location = new System.Drawing.Point(9, 202);
+            this.yazi4.Name = "yazi4";
+            this.yazi4.Size = new System.Drawing.Size(110, 20);
+            this.yazi4.TabIndex = 18;
             // 
             // button3
             // 
@@ -151,13 +152,14 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox4
+            // yazi3
             // 
-            this.textBox4.Location = new System.Drawing.Point(9, 297);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(110, 20);
-            this.textBox4.TabIndex = 20;
+            this.yazi3.Location = new System.Drawing.Point(9, 297);
+            this.yazi3.Name = "yazi3";
+            this.yazi3.Size = new System.Drawing.Size(110, 20);
+            this.yazi3.TabIndex = 20;
             // 
             // button4
             // 
@@ -168,18 +170,19 @@
             this.button4.TabIndex = 19;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // Devam1
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Info;
-            this.button5.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.button5.Location = new System.Drawing.Point(647, 542);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 44);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Devam etmek için tıklayın.";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.Devam1.BackColor = System.Drawing.SystemColors.Info;
+            this.Devam1.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.Devam1.Location = new System.Drawing.Point(647, 542);
+            this.Devam1.Name = "Devam1";
+            this.Devam1.Size = new System.Drawing.Size(150, 44);
+            this.Devam1.TabIndex = 21;
+            this.Devam1.Text = "Devam etmek için tıklayın.";
+            this.Devam1.UseVisualStyleBackColor = false;
+            this.Devam1.Click += new System.EventHandler(this.button5_Click);
             // 
             // label6
             // 
@@ -200,17 +203,17 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 598);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Devam1);
+            this.Controls.Add(this.yazi3);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.yazi4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.yazi1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.mesleginiz);
+            this.Controls.Add(this.yasiniz);
+            this.Controls.Add(this.soyadiniz);
             this.Controls.Add(this.adiniz);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.yazi2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -227,17 +230,17 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox yazi2;
         private System.Windows.Forms.Label adiniz;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label soyadiniz;
+        private System.Windows.Forms.Label yasiniz;
+        private System.Windows.Forms.Label mesleginiz;
         private System.Windows.Forms.TextBox yazi1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox yazi4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox yazi3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Devam1;
         private System.Windows.Forms.Label label6;
     }
 }

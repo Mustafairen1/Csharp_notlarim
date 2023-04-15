@@ -27,7 +27,7 @@ namespace Calisma1
             il_ilce.Refresh();
             System.Threading.Thread.Sleep(50);
             Meslek.Refresh();
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(4000);
             Dogrulandi.Refresh();
 
         }

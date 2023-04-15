@@ -207,12 +207,12 @@ Evet bu butona bastığımda artık Veteriner'i istediğim kadar ListBox'a ekley
 Böylece textbox'a yazdıklarım, örneğin müdür yazdığımda mesleklerin bulunduğu ListBox'a gidecektir, böylece bu dersimde burada kapanmış oluyor, şimdi visual studio ile yapım işlemine geçip github'a yükleyeceğim.
 
 **extra bilgi**
-eğerki 2 tane textbox üzerinden veri almak istiyorsan
+Eğerki 2 tane textbox üzerinden veri almak istiyorsan
 
      listBox1.İtems.add(textBox3.Text + " " + textBox4.Text);
 
 
- böylece 2 tane textbox'a yazdıklarınız listbox'a gidecektr.
+ Böylece 2 tane textbox'a yazdıklarınız listbox'a gidecektr.
 
 ##### string nedir?
 Üstünde arimetrik işlemler yapılmayacak alfabetik verilerdir.

@@ -262,3 +262,6 @@ Maskeli metin kutusu olarak telafuz edilecek bir araçtır, çalışma alanı te
 Picturebox adından da anlayacağınız gibi bir resim kutusudur.
 ##### Datetimepicker nedir?
 Datetimepicker türkçede Tarih zaman toplayıcı olarak nitelendirilebilir.
+
+### 8. Chekcbox Radiobutton Richtextbox Panel ve Groupbox Kullanımları
+Devamı gelicek.

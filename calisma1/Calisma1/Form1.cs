@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace Calisma1
 {
     public partial class Form1 : Form
@@ -5,6 +7,14 @@ namespace Calisma1
         public Form1()
         {
             InitializeComponent();
+            foreach (Control control in this.Controls)
+            {
+                if (control is Label)
+                {
+                    control.BackColor = Color.Transparent;
+                }
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -16,8 +26,9 @@ namespace Calisma1
         {
             ad.Text = (isim_text.Text + " " + soy_isim_text.Text);
             Yas.Text = (yas_text.Text);
-            il_ilce.Text = (il_ilce_text.Text);
-            Meslek.Text = (meslek_text.Text);
+            il_ilce.Text = (il_text.Text);
+            Meslek.Text = (Meslek_text.Text);
+            e_mail.Text = (e_mail_text.Text);
             Dogrulandi.Text = "Baþvurunuz yönetime iletilmiþtir, e posta adresinize meþaj gelecektir.";
             System.Threading.Thread.Sleep(50);
             ad.Refresh();
@@ -27,6 +38,8 @@ namespace Calisma1
             il_ilce.Refresh();
             System.Threading.Thread.Sleep(50);
             Meslek.Refresh();
+            System.Threading.Thread.Sleep(50);
+            e_mail.Refresh();
             System.Threading.Thread.Sleep(4000);
             Dogrulandi.Refresh();
 

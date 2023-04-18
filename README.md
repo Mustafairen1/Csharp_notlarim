@@ -209,9 +209,11 @@ Böylece textbox'a yazdıklarım, örneğin müdür yazdığımda mesleklerin bu
 **extra bilgi**
 Eğerki 2 tane textbox üzerinden veri almak istiyorsan
 
-     listBox1.İtems.add(textBox3.Text + " " + textBox4.Text);
+|listBox1.İtems.add(textBox3.Text + " " + textBox4.Text);|  |
+|--------------------------------------------------------|--|
+|                                                        |  |
 
-
+    
  Böylece 2 tane textbox'a yazdıklarınız listbox'a gidecektr.
 
 ##### string nedir?
@@ -224,4 +226,39 @@ ListBox'da ComboBox'un açılmış hali gibi düşünün, tek farkı ListBox'ta 
 Eğerki sürekli font ayarlamak istemiyorsanız Formun özelliklerinden varsayılan fontu seçebilirsiniz.
 
 ### 7.Maskedtextbox - Picturebox - Datetimepicker Kullanımları.
-Daha bitirmedim.
+
+**Adım 1**
+Şimdi maskedtextbox dan 3 tane oluşturalım formumuzda
+1 Tel no
+2 TC no
+3 Tarih
+4 Saat 
+
+Olacak şekilde oluşturalım. 1 tane button 1 tanede listbox oluşturalım, ve şu komutları girelim 
+
+    listBox.İtems.Add(maskedTextBox1.Text+  " " +  maskedTextBox2.Text+ " " +  maskedTextBox3.Text+ " " +  maskedTextBox4.Text);
+
+Burda listbox yani liste kutusuna masked text box yani maskelenmiş metin kutularına veya kutusuna yazdığımız herşeyi kaydetmesini sağlıyoruz.
+
+**Adım2**
+Şimdi 1 tane Picturebox'u formumuza koyuyoruz, ve üzerine geldiğimizde Picturebox'un üzerinde bulunan küçük butona basıyoruz, ve 3 tane seçenek görüyoruz.
+1 Choose image (Resim seç) demektir.
+2 Dock in Parent Container (formun tamamını kapla) demektir.
+3 Size Mode (Boyut modu) demektir, ve bir resmi Picturebox'a tamamen sığdırmak için kullanılır.
+
+Şimdi bir resmi içeriye aktaralım, örnek olarak rastgele bir resim seçtik, ve artık dosyalara extra resim aktarmadan bu resmi kalıcı şekilde programa aktardık.
+
+**Adım3**
+Şimdi 1 tane Datetimepicker ekliyoruz ve 1 tanede buton ekliyoruz, ve butona bastığımda Datetimepicker'deki girdiğimiz verileri listbox'a gönderteceğiz.
+
+    listBox1.İtems.Add(dateTimePicker1.Text);
+
+Böylece dateTimePicker'deki veriler listBox'a gönderilicektir.	 
+
+##### Maskedtextbox nedir? 
+Maskeli metin kutusu olarak telafuz edilecek bir araçtır, çalışma alanı telefon numarası, tc kimlik no gibi birçok özelliği programınıza eklemesidir.
+
+##### Picturebox nedir? 
+Picturebox adından da anlayacağınız gibi bir resim kutusudur.
+##### Datetimepicker nedir?
+Datetimepicker türkçede Tarih zaman toplayıcı olarak nitelendirilebilir.

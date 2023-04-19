@@ -341,4 +341,73 @@ Samsun
 Burada Kaydet butonuna basıldığında ListBox aracımızın içine yukarıda girdiğimiz tüm değerleri girmektedir.
 
 ## 3. Değişkenler.
-Yapıyorum.
+### 11. Değişken nedir & Kavramlar
+Değişken ingilizcedeki (Variable) kelimesinden geliyor, ve bellekte tutmanız gereken nesneler objeler diyebiliriz, şimdi örneğin 1 tane mantar pano tahtaları düşünün, üstüne küçük blok not kağıtlarıyla, not yazarsınız onu mantar panosuna asarsınız, bunuda şöyle yaparsınız
+
+1 mantar pano iğnesiyle
+
+2 raptiye ile
+
+3 uhu yapıştırıcı ile
+
+4 bant ile
+
+5 mantar pano arasına sıkıştırma yöntemi ile
+
+Bunları kullanarak kağıtları yapıştırırsınız, burda yapmamız gereken en optimal yoldur, mesela uhu yapıştırıcısı ile yaparsanız bir süre sonra pano arkası zarar görür, bantda aynı şekilde talaş kısmını söker ve kötü bir görüntü oluşturur, sıkıştırmayla ise en ufak bir darbe, veya esinti ile aşağıya düşer, raptiye ise çok deler talaşı kullanışsız hale getirir, bunun için en uygun olanı nedir? mantar pano iğnesidir,
+
+Ozaman bunun bilgisayardaki karşılığınada şöyle diyebiliriz
+RAM, yani bilgisayardaki verilerin geçici olarak saklandığı, ve bilgisayar kapatıldıktan sonra verilerin kaybolduğu yok olduğu bellek addresi olarak düşünürsek, değişkenleri  RAM'de tutarken en optimal şekilde tutmanız gerekiyor.
+
+#### Peki C# üzerinde hangi tip değişkenler var?
+String değişkeni
+İnt değişkeni
+Double değişkeni
+Char değişkeni 
+Gibi basit değişkenlerden başlayıp Float, Byte gibi diğer tüm değişkenlerle devam edeceğiz.
+#### 12.String Değişkenler
+**Adım1**
+Şimdi 1 tane buton oluşturuyoruz 1 tanede label, sonrada şu kodları giriyoruz, ama başlamadan önce Deşişken tanıması için nasıl yol izleyeceğiz
+Değişkentürü -> Değişkenadı
+Yanlız Değişkenadı verirken şunlara dikkat edin, elinizden geldiğince anlamlı isimler vermeye çalışın, mesela değişken sayı verecekseniz
+
+İnt sayı 1 sayı 2 şekilinde.
+
+Ad soyad verecekseniz
+String ad String soyad şeklinde.
+
+Şimdi kodları girelim
+
+    string metin;
+    metin = "Merhaba bugün 19 Nisan 2023 Çarşamba";
+    label1.Text = metin;
+Böylece string metin; ile metin diye bir değer oluşturduk
+
+Metin = "yazınız" ilede oluşturduğumuz metin adlı değeri bir yazıya çevirdik, ve label1'e text metini yazdırdık.
+
+**Adım2**
+Şimdide ad soyad ve meslek yazdıracağız.
+
+    string adsoyad,meslek;
+    adsoyad = "Eylül Yücedağ";
+    meslek = "Öğretmen";
+    label1.Text = adsoyad;
+    label2.Text = meslek;
+    
+   Bu şekilde ad soyad ve mesleği yazdırmış oluyoruz.
+
+**adım3** 
+Şimdide Textbox'dan aldığımız veriyi Label'e yazdıracağız.
+
+    string sehir;
+    sehir = textBox1.Text;
+    label1.Text = sehir;
+Böylece zikzak şekilde label 1'e Textbox tan şehir yada herhangi istediğimiz birşeyi butona basınca yazdırmış oluyoruz.
+
+Bu şekilde String'in temelini atmış olduk.
+
+### 13. int Değişkenler
+devam ediyorum. 19.04.2023 16:24
+
+
+

@@ -206,17 +206,15 @@ Evet bu butona bastığımda artık Veteriner'i istediğim kadar ListBox'a ekley
      
 Böylece textbox'a yazdıklarım, örneğin müdür yazdığımda mesleklerin bulunduğu ListBox'a gidecektir, böylece bu dersimde burada kapanmış oluyor, şimdi visual studio ile yapım işlemine geçip github'a yükleyeceğim.
 
-**extra bilgi**
+**Extra bilgi**
 Eğerki 2 tane textbox üzerinden veri almak istiyorsan
 
-|listBox1.İtems.add(textBox3.Text + " " + textBox4.Text);|  |
-|--------------------------------------------------------|--|
-|                                                        |  |
+    listBox1.İtems.add(textBox3.Text + " " + textBox4.Text);
 
     
  Böylece 2 tane textbox'a yazdıklarınız listbox'a gidecektr.
 
-##### string nedir?
+##### String nedir?
 Üstünde arimetrik işlemler yapılmayacak alfabetik verilerdir.
 ##### ComboBox nedir?
 ComboBox mesela örneğin bir sitede liste açarsınız şehir veya ilçe seçin diye menü gelir içindede örneğin adana vesaire bulunur, işte bu tarz işlemlerde ComboBox kullanılır, yani kullanıcıya seçim yapma hakkı tanır.
@@ -263,5 +261,6 @@ Picturebox adından da anlayacağınız gibi bir resim kutusudur.
 ##### Datetimepicker nedir?
 Datetimepicker türkçede Tarih zaman toplayıcı olarak nitelendirilebilir.
 
-### 8. Chekcbox Radiobutton Richtextbox Panel ve Groupbox Kullanımları
-Devamı gelicek.
+### 8. Checkbox Radiobutton Richtextbox Panel ve Groupbox Kullanımları.
+Devam edecek..
+##### CheckBox nedir?

@@ -298,5 +298,22 @@ RadioButton türkçesi Radyo düğmesi olarak geçer, ve buda tek tıklamalık b
 Panel GroupBox gibi, araçları biraraya almaya yarıyor, ama daha çok tasarımsal uygulamalarda kullanılıyor, mesela groupbox'da renk yokken çizgiler var, ama Panel'de yok, işte bu yüzden Panel tasarımsal yönden iyidir, rengini değişitirirsin falan.
 ##### RichTextBox nedir?
 RichTextBox türkçede ZenginMetinKutusu olarak geçer, yine TextBox gibi metin girişidir, fakat tek farkı enter basarak alt satıra yazı yazabiliyoruz.
-### 9. Örnek Proje - Login Paneli Oluşturma
-Devam edecek.
+### 9. Örnek Proje - Login Paneli Oluşturma (Sadece Tasarım paneli örneğidir, işlevsel değildir.)
+
+**Adım1**
+Form1'in adını Kullanıcı Giriş Paneli olarak değiştirmekle başlayalım, 2 label  1 MaskedTextBox oluşturalım, kişinin tc no'su kullanıcı adı olsun. 1 altınada textbox ekleyelim, oda şifremiz olsun, 1'ci labeli TC Kimlik NO: yazalım 2'ci labeli Şifre: yazalım.
+
+**Adım2**
+Şimdi 1 tane panel oluşturalım, ve üste alıp büyütelim, bunu kapak yani bir logo gibisinden kullanacağız, 1 tane daha panel oluşturup onuda alta alıp biraz aşağıya doğru inceltelim, bunuda site haritası olarak kullanacağız, örneğin c# paneli 2017 tüm hakları saklıdır gibisinden.
+
+**Adım3**
+Üstteki ve alttaki panellerin renklerini pembe yapıyoruz, ve 1 tane button ekliyoruz, ve butonun ismi Giriş Yap olarak adlandırıyoruz, ve Şifremizin sağ alt kısmına pek sırıtmayacak şekilde ekliyoruz, şimdi 1 tanede CheckBox ekleyelim, ve onuda Şifremi Unutum olarak adlandıralım, 1tanede Label oluşturup Online Ders Giriş Paneli olarak adlandıralım, ve internetten lesson png yazıp en beğendiğimizi alalım.
+
+**Adım4**
+Şimdi 1 tane PictureBox oluşturalım, ve indirdiğimiz Lesson png'yi içine aktarıp Stretchİmage seçeneğini seçelim, ve boş biyere basalım, ha bu arada illaki internetten almanıza gerek yok, kendinizde 1 tane yapabilirsiniz.
+
+**Adım4**
+Şimdi MaskedTextBox'un içindeki sağdaki butona basıp 11 haneli bir değer oluşturalım'ki tc kimlik no girmelik hane oluşsun, şimdi textbox'un üzerine tıklayıp özelliklerden en alta gidiyoruz, ve UseSystemPasswordChar yani Sistem Türkçe Karakterini kullan seçeneğini True yapıyoruz, böylece şifre ekranında şifremizi göremiyorlar, ama unutmayın Karar yapısı kullanmadığımız sürece şu an bu sadece bir görseldir.
+
+### 10 Uçak Bilet Rezervasyon Sistemi (Sadece Tasarım paneli örneğidir, işlevsel değildir.)
+Yapıyorum.

@@ -262,5 +262,41 @@ Picturebox adından da anlayacağınız gibi bir resim kutusudur.
 Datetimepicker türkçede Tarih zaman toplayıcı olarak nitelendirilebilir.
 
 ### 8. Checkbox Radiobutton Richtextbox Panel ve Groupbox Kullanımları.
-Devam edecek..
+**Adım1**
+Öncelikle  3 tane Checkbox oluşturmakla  başlayalım, ve 1 tanede groupBox oluşturalım, ve birazcık büyütüp Checkbox'ları içine alalım, groupBox'un ismini örnek olarak Soslar yapalım, 1'ci Checkbox'u Mayonez 2'ci Checkbox'u Ketçap 3'ci Checkbox'u Hardal olacak şekilde ayarlayalım ve Groupbox'un içine simetrik şekilde dizelim, ve group box'u bu 3 Checkbox'a yeticek kadar küçültelim, ve işte bu groupbox hazır şekilde çalışyor, şimdi 1 tane daha araç ekleyeceğiz RadioButton, ve adım2'de anlatımını söyleyeyim.
+
+**Adım2**
+Şimdi RadioButton oluşturalım 10 tane, tek tek şunları yazalım. (burdaki sayılar temsilendir, yani eğitim amaçlı)
+1 kişilik
+2 kişilik
+3 kişilik
+4 kişilik
+5 kişilik
+6 kişilik
+7 kişilik
+8 kişilik
+9 kişilik
+10 kişilik
+
+Ve bunları sığacak şekilde, aşağıdaki gibi 5'e bölerek dizelim.  (burdaki sayılar temsilendir, yani eğitim amaçlı)
+1 kişilik 6 kişilik
+2 kişilik 7 kişilik
+3 kişilik 8 kişilik
+4 kişilik 9 kişilik
+5 kişilik 10 kişilik
+Böylece kaç kişilik olacağına dahir bir menüde eklemiş oluyoruz.
+
+**Adım3**
+1'tane panel oluşturalım, ve oluşturduğumuz RadioButonları içine alıp paneli arkaplana uygun bir renk yapalım, ve bu eğitim böylece bitmiştir, son olarak 2 tane örnek proje yapımı var, onları gösterip Temel araçlar bölümünü tamamen bitirmiş olacağız.
 ##### CheckBox nedir?
+Checkbox türkçede Kontrol kutusu olarak geçer, ve seçilen görevin alınıp alınmadığını kontrol ediyor 2 tane durumu var Checkbox'un ya True(seçili) yada False(seçili değil) şeklinde, yani ortası olmayan durumdur, kullanıcının birden fazla yapacağı seçimlerde daha çok kullanılır, mesela hamburgerinizde ne istersiniz? ketçap mayonez gibisinden.
+##### GropBox nedir?
+Groupbox türkçede Grup kutusu olarak geçiyor, ve  amacı araçları biraraya almaya yarar.
+##### RadioButton nedir?
+RadioButton türkçesi Radyo düğmesi olarak geçer, ve buda tek tıklamalık butondur, CheckBox'un aksine bunda 2 tane aynı anda RadioButton seçme gibi bir hakkınız olmayacaktır.
+##### Panel nedir?
+Panel GroupBox gibi, araçları biraraya almaya yarıyor, ama daha çok tasarımsal uygulamalarda kullanılıyor, mesela groupbox'da renk yokken çizgiler var, ama Panel'de yok, işte bu yüzden Panel tasarımsal yönden iyidir, rengini değişitirirsin falan.
+##### RichTextBox nedir?
+RichTextBox türkçede ZenginMetinKutusu olarak geçer, yine TextBox gibi metin girişidir, fakat tek farkı enter basarak alt satıra yazı yazabiliyoruz.
+### 9. Örnek Proje - Login Paneli Oluşturma
+Devam edecek.

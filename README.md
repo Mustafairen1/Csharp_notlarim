@@ -316,4 +316,29 @@ Form1'in adını Kullanıcı Giriş Paneli olarak değiştirmekle başlayalım, 
 Şimdi MaskedTextBox'un içindeki sağdaki butona basıp 11 haneli bir değer oluşturalım'ki tc kimlik no girmelik hane oluşsun, şimdi textbox'un üzerine tıklayıp özelliklerden en alta gidiyoruz, ve UseSystemPasswordChar yani Sistem Türkçe Karakterini kullan seçeneğini True yapıyoruz, böylece şifre ekranında şifremizi göremiyorlar, ama unutmayın Karar yapısı kullanmadığımız sürece şu an bu sadece bir görseldir.
 
 ### 10 Uçak Bilet Rezervasyon Sistemi (Sadece Tasarım paneli örneğidir, işlevsel değildir.)
+
+**Adım1**
+Öncelikle 2 tane GroupBox oluşturarak başlıyoruz, 1'ci GroupBox uçuş bilgilerini tutucağı için Uçuş Bilgileri olarak adlandırıyoruz, 2'ci GroupBox yolcu bilgilerini tutucağı için Yolcu Bilgileri olarak adlandırıyoruz.
+
+**Adım2**
+Şimdi Uçuş Bilgileri bölümüne 3 label ve 2 combobox 1 tanede DateTimePicker ekliyoruz,  1ci Label'i Nereden: diye adlandırıyoruz 2ci Labeli Nereye: diye adlandırıyoruz 3'ci labelide Tarih: olarak adlandırıyoruz, Labelleri alt alta ekliyoruz DateTimePicker'i Tarih'in karşısına almakla başlıyoruz, ve combobox'larıda karşı karşıya ekliyoruz, ve 2 combobox'un içinede örnek olarak 5 şehir ekiyoruz.
+
+Ankara 
+Bursa 
+Adana 
+Elazığ 
+Samsun
+Şimdi normalde Saat'de ekleyebilirdik, fakat isteğe bağlıdır ben eklemeyeceğim.
+
+**Adım3**
+Şimdi Yolcu Bilgileri grubunu dizelim, 3 label 1 tane button 1 textbox 2 tanede maskedTextBox oluşturuyoruz, ve uçuş bilgilerindeki gibi Yolcu bilgilerine hizalıyoruz, 1'ci label Yolcu Ad Soyad: 2'ci Label TC: 3'ci Label  Telefon: olarak adlandırıyoruz, butonuda Kaydet olarak adlandırıyoruz ve yeşile boyuyoruz.
+
+**Adım4**
+Şimdi üst kısma 1 tane Panel oluşturuyoruz, ve rengini insan rengine yakın yapıyoruz, 1 tanede alt kısma ListBox oluşturuyoruz, şimdi panelin içine 1 tane label oluşturuyoruz, ve ismini Türk Hava Yolları olarak adlandırıyoruz ve internete plane.png veya gif yazıp birtane alıyoruz, ve picturebox ekleyip aldığımız png yi veya gifi içe aktarıyoruz Stretchİmage seçeneğini seçip boş biyere tıklıyoruz, tekrardan uyarayım illaki internetten almamıza gerek yok, kendimizde yapabiliriz, veya parayla yaptırabiliriz, şimdi yazacağımız kodlar sayesinde girdiğimiz bilgiler Listbox'a yansıyacaktır.
+
+    listBox.İtems.Add("Rota: " + comboBox1.Text + " - " comboBox2.Text + " Tarih:" + DateTimePicker1.Text + " Yolcu Bilgileri ~ Ad: "+textBox1.Text + " TC: " + maskedTextBox1.Text + " Telefon: " + maskedTextBox2.Text);
+    MessageBox.Show("Yolcu Kaydı Başarıyla yapılmıştır.");
+Burada Kaydet butonuna basıldığında ListBox aracımızın içine yukarıda girdiğimiz tüm değerleri girmektedir.
+
+## 3. Değişkenler.
 Yapıyorum.

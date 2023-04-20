@@ -396,7 +396,7 @@ Metin = "yazınız" ilede oluşturduğumuz metin adlı değeri bir yazıya çevi
     
    Bu şekilde ad soyad ve mesleği yazdırmış oluyoruz.
 
-**adım3** 
+**Adım3** 
 Şimdide Textbox'dan aldığımız veriyi Label'e yazdıracağız.
 
     string sehir;
@@ -407,7 +407,72 @@ Böylece zikzak şekilde label 1'e Textbox tan şehir yada herhangi istediğimiz
 Bu şekilde String'in temelini atmış olduk.
 
 ### 13. int Değişkenler
-devam ediyorum. 19.04.2023 16:24
+**Adım1** 
+Evet 1 tane label ve 1 tane buton oluşturarak yine devam ediyoruz, direkt kodlara geçelim.
 
 
+    int sayi;
+    sayi = 24;
+    label1.Text = sayi;
+Burda int değerinde bir sayi oluşturup ona bir değer atıyoruz yani 24 değerini atıyoruz, onuda label'e yansıtıyoruz, ama oda ne? label'deki sayi değeri kırmızı çizgi veriyor, pnu çözmek için ise bir String'e çevirici yapmalıyız, yani şu şekilde
 
+    int sayi;
+    sayi = 24;
+    label1.Text = sayi.ToString();
+İşte bu şekilde, butona bastığımızda 24 değeri label'e yansıdı.
+
+**Adım2**
+Şimdide 2 tane sayıyı toplam şekilde yansıtacağız, bunun için yine şunlara ihtiyacımız var.
+
+    int sayi1 , sayi2 , toplam;
+    sayi1 = 5;
+    sayi2 = 4;
+    toplam = sayi1 + sayi2;
+
+**Adım3**
+Buda biraz daha karmaşık alan kenar ve çevre bilgisidir.
+
+    int kenar, alan, cevre;
+    kenar = 10;
+    alan = kenar * kenar;
+    cevre = kenar * 4;
+    label1.Text = "Alan: " + alan+ " Çevre: " + cevre;
+    //kısa:10 uzun:20
+    //3 sınav notu girilen öğrencinin ortalaması.
+
+### 14. int değişkenler / Klavyeden Veri Girişi
+**Adım1**
+	Önce form rengini hafif koyu turuncu tonlamalarında ayarlıyoruz, bu derste int değişkeniyle klavyeden arimetrik veri girişi sağlamak, bunun için 2 label 1 button 1 textbox lazım, 1 ci labeli sayı girin: olarak değiştiriyoruz, button'u yazdır: olarak değiştriyoruz ve label 2'yi beyaz renge ayarlıyoruz, amacımız yazdır butonuna basıldığında textbox içine girilmiş değeri beyaz renkteki label'e yazdırmak, ama int formatında.
+
+    int sayi;
+    sayi = textBox1.Text;
+    label1.Text = sayi.ToString();
+Yaptığımızda kırmızı çizgiler çıkıyor, çünkü bu değer int değeri değil string değeridir, yani şöyle yaparak çözüme ulaşabiliriz.
+
+    int sayi;
+    sayi = Convert.Toİnt16(textBox1.Text);
+    label2.Text = sayi.ToString();
+Burda yaptığımız olay string değerine sahip textBox1 aracını int'e çevirdik ve sayi değerine atadık ve string olarakta label2'e aktarıyoruz, yani kısacası textBox1'deki int16 değerine dönüştürüp içindeki yazının sayi değerine verilip ordanda string'e dönüştürüp label2'e göndermesini sağlıyoruz.
+
+**adım2**
+Texbox'a girilen sayının küpünü alalım, peki küp ne demek? sayıyı kendisiyle çarpmak demek kaç defa yapalım 3 defa.
+
+    int sayi, sonuc;
+    sayi = Convert.Toİnt16(textBox1.Text)
+    sonuc = sayi * sayi * sayi;
+    label1.Text = sonuc.ToString();
+
+
+#### bilgilendirme:
+Şimdi bu işlem için bazı dönüşüm komutları vardır, şöyleki (C#) CSharp'da 3 tane int dönüşümü vardır.
+toint16
+toint32
+toint64
+Ama dünya genelinde en yaygın olanı toint32'dir ve aralıkları şu şekildedir
+
+toint16 - + ve - 32.000 aralığında
+toint32 2.buçuk aralığında
+toint64 çok daha büyük tam sayılar için kullanılıyor.
+
+### 15. İnt değişkenler pratik örnek arimetik 4 işlem.
+yarına devam.

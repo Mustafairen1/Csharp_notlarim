@@ -475,4 +475,20 @@ toint32 2.buçuk aralığında
 toint64 çok daha büyük tam sayılar için kullanılıyor.
 
 ### 15. İnt değişkenler pratik örnek arimetik 4 işlem.
-yarına devam.
+**adım1**
+Şimdi öncelikle 2 tane label 2 tane textbox 1 tanede butona ihtiyacımız var, labellerden 1'ini sayı 1 2'cisini  sayı 2 olarak adlandırıp textbox ile beraber hizalıyoruz, butonuda hesapla olarak adlandırıyoruz, şimdi kodlarına geçelim.
+
+    int sayi1, sayi2, toplam, carpim, fark, bolum;
+    sayi1 = Convert.Toİnt16(textBox1.Text);
+    sayi2 = Convert.Toİnt16(textBox2.Text);
+    toplam = sayi1 + sayi2;
+    carpim = sayi1 * sayi2;
+    bolum = sayi1 / sayi2;
+    fark = sayi1 - sayi2;
+    MessageBox.Shop("Toplam: " + toplam + "\n" +  " Fark: " + fark + "\n" + "Çarpım: " + carpim + " \n" + " Bölüm: " + bolum );
+
+#### Bilgilendirme:
+CTRL  k ve d tuşlarına aynı anda basarak kodlarınızı düzenletebilirsiniz.
+
+### 16. Double Değişkenler.
+devam edicek.

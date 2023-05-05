@@ -491,4 +491,49 @@ toint64 çok daha büyük tam sayılar için kullanılıyor.
 CTRL  k ve d tuşlarına aynı anda basarak kodlarınızı düzenletebilirsiniz.
 
 ### 16. Double Değişkenler.
-devam edicek.
+#### double nedir?
+Double ondalık sayı değeri olarak geçer. ama şunu hatırlatayım, eğerki ondalıklı sayıyı kod kısmından girerseniz, ondalığı nokta ile veriyorsunuz, klavyeden girerseniz virgül ile veriyorsunuz.
+
+**adım1**
+Öncelikle 1 tane buton 1 tanede label ekiyoruz, ve double değerini label'e yazdırarak başlayalım.
+
+    double sayi;
+    sayi = 4.25;
+    label1.Text = sayi.ToString();
+Böylece double sayı değerini butona basarak basitinden label'e yazdırmış oluyoruz
+
+**adım2**
+Hadi biraz daha geniş birşey yapalım. 3 tane sınav notu girilen öğrencinin ortalamısını hesaplayan program yapalım.
+double s1, s2, s3, ort;
+
+    s1 = 60;
+    s2 = 70;
+    s3 = 89;
+    ort=(s1 + s2 + s3) / 3;
+    label1.Text=ort.ToString(); 
+Böylece napmış oldu double'nin ondalık değeri kadar sağ tarafa sayıları yazdırdı.
+
+**adım3**
+
+    s1 = 60;
+    s2 = 70;
+    s3 = 89;
+    ort=(s1 + s2 + s3) / 3;
+    label1.Text=ort.ToString("0.00"); 
+   
+ Burdada bilgilendirmede bahsettiğim gibi klavyeden virgülden sonra 2 basamak getir demektir, mesela 3 yaparsak virgülden sonra 3 sayı gösterecektir.
+**adım4**
+Peki double ile klavyeden nasıl değer alıcaz? 1 tane textbox alalım, textbox'a yazılan sonucuda label'e yazdıralım
+
+    double sayi = Convert.ToDouble(textBox1.Text);  
+    label1.Text = sayi.ToString();
+
+
+#### Bilgilendirme:
+Eğer ki siz bu formatta istemiyorsanız, bunun formatları var işte klavyeden sonra şu kadar yazılsın klavyeden sonra bu kadar yazdırılsın şeklinde formatları mevcut, o formatlarıda 3'cü adımdaki gibi ayarlayabiliriz.
+
+#### Bilgilendirme2:
+Eğer ki klavyeden veri girişinde nokta kullanırsanız bütün olarak ele alır ama virgül olarak kullanırsanız ondalık bir değer olarak almış olur.
+
+### 17. Pratik Örnek - Öğrenci Sınav Notları Hesaplama Uygulaması
+Lavabo sonrası devam edicek.

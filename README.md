@@ -536,4 +536,48 @@ Eğer ki siz bu formatta istemiyorsanız, bunun formatları var işte klavyeden 
 Eğer ki klavyeden veri girişinde nokta kullanırsanız bütün olarak ele alır ama virgül olarak kullanırsanız ondalık bir değer olarak almış olur.
 
 ### 17. Pratik Örnek - Öğrenci Sınav Notları Hesaplama Uygulaması
-Lavabo sonrası devam edicek.
+Öğrencilerin adını soy adını ve sınav notlarının girilip listbox'a kaydedildiği sistem yapacağız.
+**adım 1**
+5 tane Label ekliyoruz, ve sırayla aşağıdaki gibi 1'den 5'e kadar adlandırıyoruz.
+Ad:
+Soyad:
+Sınav 1:
+Sınav 2:
+Proje:
+Şimdi 2 tane textbox oluşturalım.  ve aşağıdaki gibi  aşağıya doğru hizalıyalıym
+Ad: Textbox
+Soyad: Textbox
+
+3 tane daha text box oluşturup onlarıda aşağıdaki gibi  yan yana hizalıyalım.
+Soru1: textbox Soru2: textbox Proje: textbox
+Ve sığmaları amacıyla son 3 textboxları eşit miktarda küçültelim, devamı adım 3'de
+
+**adım3**
+1 tane buton ekleyelim adınıda Hesapla yapalım, ve aşağıdaki gibi ortalayıp sağ ve sola genişletme yapalım. yapalım, sonrada 1 list boxuda oluşturup onuda alttaki gibi sağ doğru genişleterek yapalım. ok işareti ile ne kadar genişleyeceğini anlatacağım.
+
+Soru1: textbox Soru2: textbox Proje: textbox
+           <-          Hesapla       ->
+Listbox1 l
+--------------------------------------------------------->	
+
+Ad ve soyad'ın yanı boş kaldı, oraya 1 picturebox ekleyelim, ve internetten indirdiğimiz School png'yi yükleyelim size modunuda strechİmage yapalım.
+
+**adım4**
+Şimdi Hesapla butonuna çift tıklayıp kodları yazalım, adı ve soy adı string olarak tanımlayacağız, sınav ve projeyi int türünde ortalamayıda double türünde tutsun.
+
+    string ad, soyad;
+    int s1, s2, proje;
+    double ortalama;
+    ad = textBox1.Text;
+    soyad = textBox2.Text;
+    s1 = Convert.Toİnt16(textBox3.Text)
+    s2 = Convert.Toİnt16(textBox4.Text)
+    proje = Convert.Toİnt16(textBox5.Text)
+    ortalama = (s1 + s2 + proje + ) / 3;
+    listBox1.İtems.add(ad + " " + soyad+ " Ortalama: " + ortalama  );
+
+#### Bilgilendirme
+Ben 2 tane uygulama yapcam, uygulamayı Cefsharpnotlarım/Calismalarım klasörünün içinde görebilirsin.
+
+### 18. Char Değişkenler
+Uygulamayı yaptıktan sonra bunu bitiricem.

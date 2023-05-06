@@ -570,14 +570,115 @@ Ad ve soyad'ın yanı boş kaldı, oraya 1 picturebox ekleyelim, ve internetten 
     double ortalama;
     ad = textBox1.Text;
     soyad = textBox2.Text;
-    s1 = Convert.Toİnt16(textBox3.Text)
-    s2 = Convert.Toİnt16(textBox4.Text)
-    proje = Convert.Toİnt16(textBox5.Text)
-    ortalama = (s1 + s2 + proje + ) / 3;
+    s1 = Convert.Toİnt16(textBox3.Text);
+    s2 = Convert.Toİnt16(textBox4.Text);
+    proje = Convert.Toİnt16(textBox5.Text);
+    ortalama = (s1 + s2 + proje) / 3;
     listBox1.İtems.add(ad + " " + soyad+ " Ortalama: " + ortalama  );
 
 #### Bilgilendirme
 Ben 2 tane uygulama yapcam, uygulamayı Cefsharpnotlarım/Calismalarım klasörünün içinde görebilirsin.
 
 ### 18. Char Değişkenler
-Uygulamayı yaptıktan sonra bunu bitiricem.
+#### Char nedir?
+
+Char karakterden geliyor, ve tek karakterlik veriler için kullanılıyor, peki neden tek karakterlik verilere ihtiyacımız olabilir? mesela sizin string olarak atadığınız veriler örneğin aşağıdaki kadar yer kaplıyorsa
+
+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+İşte Char verilerde aşağıdaki kadar yer kaplayacak
+
+))
+
+))
+
+))
+**adım1**
+1 tane button oluşturalım 1 tanede label ekleyelim, yapmamız gereken şey şu, char ile oluşturduğum değeri label'e yazdıracağız.
+
+     char takim;
+    takim = 'g';
+    label1.Text = takim.ToString();
+
+Böylece label'e g yani galatasaray yazdırmış oluyoruz.
+
+**adım2**
+Şimdi daha farklı birşey yapalım, textbox'a girmiş olduğumuz metni char değişken türüne çevir label'e yazdır yapacağız
+
+    char ders;
+    ders = convert.ToChar(textBox1.Text);
+    label1.Text = ders.ToString();
+
+Bu arada belirteyim, char değerlerinde boş bırakırsanız direkt hata ile karşılaşırsınız, aynı zamanda tek karakter dışında a1 52 falan yazarsanızda hata ile karşılaşacaksınızdır.
+#### Biglilendirme
+Char'ın stringten farklı olarak tanımlanmasında çift tırnak değil tek tırnak vardır.
+### 19. Proje - Siname büfe satış uygulaması
+**adım1**
+1 groupbox oluşturup içerisine ekleyeceğimiz 4 label 4 textbox oluşturalım, ve labelleri
+1 ci label Mısır:
+2 ci label Su:
+3 cü label Çay:
+4 cü label Bilet:
+Olarak adlandıralım, ve aşağıdaki görseldeki gibi dizelim
+![Görsel](https://prnt.sc/_Wt2yhzB7qNY)
+Sonra GroupBox adını Ürün Miktar yapalım, ve arkaplan renginiz formunuzun rengine uygun şekilde renk seçin.
+**adım2**
+Şimdi 1 tane daha group box oluşturalım, ve 4 tane label oluşturup aşağıdaki gibi adlandıralım
+1 ci label Mısır: 40 tl
+2 ci label Su: 8 tl
+3 cü label Çay: 16 tl
+4 cü label Bilet:80 tl
+Ve aşağıdaki görseldeki gibi dizip renginide form renginize göre ayarlayın.
+![Görsel2](groupbox%20isminide%20Fiyatlar%20yap%C4%B1n.)
+Groupbox isminide Fiyat tablosu yapın.
+**adım3**
+3'cü groupbox'uda oluşturalım, bu kasa modülü olucak, yani ismini Kasa yapacağız, arkaplan renginide yine form renginide göre ayarlıyorsunuz, şimdi 2 tane label ekliyoruz 1 tanesinin ismini Toplam: yapıyoruz, diğerinin isminide 0.00tl yapıyoruz, ve aşağıkdaki görselde olduğu gibi diziyoruz.
+![Görsel3](https://prnt.sc/da086GWh1rLZ)
+**adım4**
+Şimdi 1 tane buton ekliyoruz, adını Hesapla yapıyoruz, ve aşağıdaki görseldeki gibi diziyoruz 1 tane label daha oluşturuyoruz onu da aşağıdaki görseldeki gibi adlandırıyoruz, ayrıca 1 tanede picturebox ekleyip ister kendimiz yapacak şekilde yada ister googleden olacak şekilde 1 ticket veya popcorn png koyalım, ayrıca 2 label daha ekleyip 1 labelin adını kasa: 2 labelin adını 0.00 TL yapıyoruz.
+![Görsel4](https://prnt.sc/TfhH7oYBOt8X)
+**adım5**
+Şimdi kodlara geçmeden öce uyarı yapayım **"bu sefer ben burda gerçek bir kod satırının içine yazıcam"** çünkü burda önemli bir nokta var, global alan diye bir satır vardır kodlarda eğerki biz  private void button1'in altına tüm kodları yazarsak her butona bastığımızda örnek eklediğimiz 5 sayısını sürekli tekrarlıcaktır onun yerine private void button1'in yukarısındaki boşluğa yazarsak kısır döngüsünden, yani 5 sayısını tekrarlamaktan kurtulucaktır, yani tekrarlamayıp 5 10 15 20 25 diyerek artacaktır.
+
+     public Form1()
+            {
+                InitializeComponent();
+            }
+           int kasatutar = 0;
+            private void button1_Click(object sender, EventArgs e)
+            {
+     int misir, bilet, su, cay, toplam;  
+    misir = Convert.ToInt16(TxtMisir.Text)
+    
+    bilet = Convert.ToInt16(TxtBilet.Text)
+    
+    su = Convert.ToInt16(TxtSu.Text)
+    
+    cay = Convert.ToInt16(TxtCay.Text)
+    
+      
+    
+    toplam = misir * 40 + cay * 16 + bilet * 80 + su * 8;
+    
+    lblToplam.Text = Toplam.ToString() + " TL ";
+    
+      
+    kasatutar = Kasatutar + toplam;
+    
+    lblKasa.Text = kasatutar.ToString() + " TL ";
+            }
+        }
+    }
+**adım6**
+Şimdide 1 tane temizle butonu ekleyelim, ki yeni müşteri geldiğinde tek tek textbox'ları temizlemeye uğraşmayalım. bu sefer yukardaki gibi bir ayar yok.
+
+    TxtBilet.Text = "";
+    TxtCay.Text = "";
+    TxtMisir.Text = "";
+    TxtSu.Text = "";
+    TxtSu.Focus();
+
+#### Bilgilendirme:
+birden fazla label textbox veya herhangi araç varsa alanına göre özelliklerden (name) kısmını değişerek yapabilirsin.
+## Bölüm 4 - Karar Yapıları
+yakında.

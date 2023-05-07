@@ -1,3 +1,4 @@
+
 # 1. 2022 güncellemesi içeriği
 ## 1. 2022 güncellemesi içeriği
 Müfredat boyunca yeni proje oluşturduğunuz zaman sağ tarafında  (.net framework) işlemi yapacağız.
@@ -612,7 +613,7 @@ Böylece label'e g yani galatasaray yazdırmış oluyoruz.
 Bu arada belirteyim, char değerlerinde boş bırakırsanız direkt hata ile karşılaşırsınız, aynı zamanda tek karakter dışında a1 52 falan yazarsanızda hata ile karşılaşacaksınızdır.
 #### Biglilendirme
 Char'ın stringten farklı olarak tanımlanmasında çift tırnak değil tek tırnak vardır.
-### 19. Proje - Siname büfe satış uygulaması
+### 19. Proje - Sinema büfe satış uygulaması
 **adım1**
 1 groupbox oluşturup içerisine ekleyeceğimiz 4 label 4 textbox oluşturalım, ve labelleri
 1 ci label Mısır:
@@ -681,4 +682,108 @@ Groupbox isminide Fiyat tablosu yapın.
 #### Bilgilendirme:
 birden fazla label textbox veya herhangi araç varsa alanına göre özelliklerden (name) kısmını değişerek yapabilirsin.
 ## Bölüm 4 - Karar Yapıları
-yakında.
+### Operatörlerimiz nelerdir?
+ tek = anlamı neydi?  atama operatörü yani ona bir değer atama 
+ *+ - * /*  neydi? aritmetrik operatörler, yani arttırma eskiltme çarpma bölüdür.
+ == sorgulama operatörüdür, yani (eşit mi) anlamı taşıyor
+ *>=* büyük eşit anlamına geliyor
+ *<=* küçük eşit anlamına geliyor
+  *!=* eşit değilse anlamına geliyor
+   *&&* ve anlamına geliyor
+   *||* veya anlamına geliyor
+   % mod (kalan) 2 sayının birbirine bölümünden kalanı verir.
+   
+### 21. If - Else
+**adım1**
+1 tane buton 1 tane label ekliyoruz, 1 tanede textbox ekliyoruz, şimdi burdaki amaç şu, textbox'a girmiş olduğum isim mesela ali ise Hoşgeldin yazsın yanlış girildiğinde ise hatalı kişi yazsın, kodları girelim hemen.
+
+    if (textBox1.Text"ali")
+    {
+    label1.Text = "doğru";
+    }
+    else
+    {
+    label1.Text = "yanlış";
+    }
+
+**adım2**
+Şimdide klavyeden girdiğimiz sayı 5 ise doğru yazsın değilse yanlış yazsın.
+
+    int sayi = convert.ToInt16(textBox1.Text);
+    if (sayi == 5)
+    {
+    label1.Text = "doğru";
+    }
+    else
+    {
+    label1.Text = "yanlış";
+    }
+    
+Evet böylece 5 yazdığımda doğru yazdığımızda yanlış cevabını alıyoruz.
+
+**adım3**
+Klavyeden yazılan sayının  tekmi çift mi olduğunu bulup label'e yazdıran kod yazalım.
+
+    int sayi = Convert.ToInt16(textBox1.Text);
+    if (sayi % 2 == 0)
+    {
+    label1.Text = "Çift";
+    }
+     else
+    {
+    label1.Text = "Tek";
+    }
+**adım4**
+Bu sefer ve yani && operatörünü kullanalım klavyeden gelen sayı 10'dan büyük ve çift sayıysa hem 10'dan büyük hemde çift olucak, hadi yapalım.
+
+    int sayi = Convert.ToInt16(textBox1.Text);
+    if (sayi % 2 == 0 && sayi>=10);
+    {
+    label1.Text = "10 dan büyük ve çift";
+    }
+    {
+    else
+    }
+    {
+    label1.Text = "10 dan büyük değil yada çift değil";
+    }
+    
+**adım5**
+    Bide veya yapalım, 10 dan büyükse veya çiftse
+
+    int sayi = Convert.ToInt16(textBox1.Text);
+    if (sayi % 2 == 0 || sayi>=10);
+    {
+    label1.Text = "10 dan büyük veya çift";
+    }
+    {
+    else
+    }
+    {
+    label1.Text = "10 dan büyük değil veya çift değil";
+    }
+   Burda ben 5 girersem 10 dan büyük değil çift verecektir 10 girersem 10 dan büyük değil veya çift değil diyecektir 15 girersem 10 tan büyük veya çift diyecektir.
+
+##### Bilgilendirme İf - else nedir? farkları nelerdir?
+if eğer, else eğer değilse ne olsun? anlamına geliyor, yani şöyle bir örnek verebilirim
+
+if (Hava yağmurluysa)
+
+{
+
+yanına şemsiye al
+
+}
+
+else
+
+{
+
+alma
+
+}
+ 
+
+anlamındadır.
+### 22. Pratik Örnek - Öğrenci Sınav Durumu Hesaplama
+Devam edicek.

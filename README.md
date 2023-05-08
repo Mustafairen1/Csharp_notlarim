@@ -813,4 +813,32 @@ hadi şimdi kodları yazalım
 Eğerki bir buton, textbox, veya diğer etkileşime geçilebilir araçları etkileşime geçilemez hale getirmek isterseniz özelliklerden Enabled'i bulun onu true'den False'e çevirin, böylece sonuç:'un gösterildiği textbox'a kimse hiç birşey yazamaz.
 
 ### 23 Pratik Örnek - Alışveriş İndirim Tutar Hesaplama
-Devam ediyorum.
+Direkt gerekenleri söyleyeceğim, 3 label 1 buton 1 tanede textbox lazım, 1 ci labeli Kitap Adet: 2 ci labeli Tutar: 3 cü labeli 0.00 TL butonu Hesapla yapıyoruz ve kitap adet ile text box u aşağıdaki gibi birleşitiriyoruz
+
+Kitap Adet Textbox
+
+Ve diğer 2 labeli böyle diziyoruz
+
+Tutar: 0.00 TL
+Butonuda buraya ekliyoruz yani Tutar: 0.00 TL'nin aşağısına koyuyoruz, şimdi kodlara geçelim, hesapla butonuna çift tıklıyoruz.
+
+    int kitapadet;
+    double toplam;
+    kitapadet = Convert.ToInt16(textBox1.Text);
+    {
+    if(kitap adet >= 0 && kitapadet <= 20)
+    }
+    toplam = (kitapadet*8)-(kitapadet*8*0.20);
+    label3.Text = toplam + " TL ";
+    }
+    if(kitapadet >=21 && kitap adet <= 40)
+    {
+    toplam=(kitapadet*8)-(kitapadet*8*0.40);
+    label3.Text = toplam + " TL "
+    }
+    if(kitapadet >=41)
+    {
+    toplam = (kitapadet*8)-(kitapadet*8*0.50);
+    label3.Text = toplam + " TL ";
+    }
+### 24. Switch Case Yapısı

@@ -782,8 +782,35 @@ else
 alma
 
 }
- 
+
+  
 
 anlamındadır.
 ### 22. Pratik Örnek - Öğrenci Sınav Durumu Hesaplama
-Devam edicek.
+Klavyeden 2 sınav notu 1 proje girilen öğrencinin ortalamasını hesaplayan program, pratik örneği yapacağız.
+**adım1**
+1 tane button 4 tane label 4 tanede textbox oluşturucaz, 1 labelimizin ismini Sınav1: olarak adlandırıcaz 2 cisini Sınav2: 3cüsünü Proje: 4cüsünüde Sonuç: olarak adlandıralım, butonun isminide Hesapla yapalım.
+**adım2**
+hadi şimdi kodları yazalım
+
+      double s1, s2, proje, ortalama;
+        string durum;
+        s1 = Convert.ToDouble(textBox1.Text)
+        s2 = Convert.ToDouble(textBox2.Text)
+        proje = Convert.ToDouble(textBox3.Text)
+       ortalama = (s1 + s2 + proje) / 3;
+        if (ortalama >= 50)
+        {
+        durum = "Geçti"
+        }
+            else
+        {
+        durum = "Gemedi"
+        }
+    textBox4.Text = ortalama.ToString("0.00") + " /  " + durum;
+
+#### Bilgilendirme:
+Eğerki bir buton, textbox, veya diğer etkileşime geçilebilir araçları etkileşime geçilemez hale getirmek isterseniz özelliklerden Enabled'i bulun onu true'den False'e çevirin, böylece sonuç:'un gösterildiği textbox'a kimse hiç birşey yazamaz.
+
+### 23 Pratik Örnek - Alışveriş İndirim Tutar Hesaplama
+Devam ediyorum.

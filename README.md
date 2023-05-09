@@ -890,198 +890,131 @@ ilk 4 butonu a,b,c,d olarak adlandırıyoruz, 5 ci butonu Sonraki olarak adland�
 5.lbl yanlış: 6 lbl 0  yani yanlış: 0
 Sonrada 1 tane yeşil doğru .gif bulup 1 ci picturebox'a giriyoruz stretch image seçmeyi ihmal etmiyoruz.
 Sonrada 1 tane kırmızı yanlış .gif bulup 2 ci picturebox'a giriyoruz stretch image seçmeyi ihmal etmiyoruz.
-
-**adım2**
-Şimdi işlemlerimiz zorlaşmasın diye aşağıdaki saydıklarımı  özelliklerdeki (name) den amacına göre adlandırıyoruz, yani (text)'den değil.
-A = btnA
-B = btnB
-C = btnC
-D = btnD
-Sonraki = btnSonraki
-Evet 0 labellerinide şöyle adlandırıcaz
-soru No:'nun karşısındaki 0'ı  lblSoruNo
-Dogru'nun karşısındaki 0'ı lblDogru
-Yanlış'ın karşısındaki 0'ı lblYanlis
-
-**adım3**
-Şimdi kodları yazmaya başlayalım, yanlız ondan önce bir hatırlatma yapalım, burda birden fazla buton kullanacağımız için aşağıdaki kodu global alana yani private void BtnSonraki kodunun hemen yukarısına eklemek gerekiyor aşağıdaki gibi, aksi halde 0 sayıları sürekli sıfırlanacak ve her yanlışı ve doğrusuna ve sayıNo'suna 1 2 3 4 5 diye yansımak yerine sürekli butona basarken önce 0 sonda 1 olacak ve bu ne kadar doğru cevap versende döngüde kalacak, bu döngüyü kırmak içinde global alanları kullanmak gerekiyor, bu hatırlatmayı yaptığıma göre kodlara geçebiliriz.
-
-    {
-       InitializeComponent(); //burası global alanında dışarısında farklı biyerdir buraya araştırmadan hiç birşey yazmayın.
-    }
-        int soruno=0, dogru=0, yanlis=0; // bu şu anda global alanın içinde.
-        
-      private void BtnSonraki_Click //buranın yukarısı global alan
-        {
-          soruno++;  //++ nedir? soruno'nun yanına ++ eklendiğinde soruno'yu 1 arttır anlamına gelir.
-          lblSoruNo.Text = soruno.ToString(); 
-          if (soruno==1)
-        {
-        richTextBox1.Text = "Cumhuriyet kaç yılında ilan edilmiştir?";
-        btnA.Text = "1920";
-        btnB.Text = "1921";
-        btnC.Text = "1922";
-        btnD.Text = "1923";
-        label4.Text = "1923";
-        }
-         if soruno==2;
-         {
-         richTextBox1.Text = "Hangi şehir Ege bölgemizde bulunmaz?";
-        btnA.Text = "İzmir";
-        btnB.Text = "Balıkesir";
-        btnC.Text = "Aydın";
-        btnD.Text = "Manisa";
-        label4.Text = "Balıkesir";
-         }
-         if(soruno == 3)
-         richTextBox1.Text = "Son Kuşlar hangi yazarımıza aittir?";
-        btnA.Text = "Sait Faik";
-        btnB.Text = "Cemal Sürya";
-        btnC.Text = "Attila ilhan";
-        btnD.Text = "Reşat Nuri";
-        label4.Text = "Sait Faik";
-        btnSonraki.Text = "Sonuçlar";
-        }
-        if (soruno == 4)
-        {
-         btnA.Enabled = false
-         btnB.Enabled = false
-         btnC.Enabled = false
-         btnD.Enabled = false
-         
-         btnSonraki.Enabled = false
-         pictureBox1.Visible = false;
-         pictureBox2.Visible = false;
-         
-         richTextBox1.Text = "Doğru: " + dogru + "\n" + "Yanlış: " + yanlis);
-        }
-  Evet böylece soruları hazırladık hazırlamasınada şimdi şıkları nasıl ayarlıyacaz yani a,b,c,d butonlarının işlevlerini, hadi onuda kodlarla anlatalım.
- 
-  **adım4**
- Diyeceksiniz ki orda label4.Text ne alaka?  şimdi adım 3'de söylemeyi unuttum 2 tane ekstradan label oluşturuyoruz diğer labelleri adlandırdığımız için bu label 4 ve 5 olarak oluşucak, 2'sinide özelliklerden (visible)'i bulup görünmez yapıyoruz, label doğru cevabı tutucak, label5 ise bizim cevabımızı tutucak, A butonunun üstüne çift tıklıyoruz, ve aşağıdaki kodları yazıyoruz.
- 
-
-    label5.Text = btnA.Text; //burada label5'e btnA.Text'den gelen değeri yazdır anlamına gelen bir kod vardır.
-    if (label4.Text = label5.Text)
-    {
-    dogru++;
-    lblDogru.Text = dogru.ToString();
-    pictureBox1.Visible = true; // doğru cevap verilmesi durumunda doğru yeşil ışık.gif çalışıcak.
-    }
-    else 
-    {
-    yanlis++;
-    lblYanlis.Text = yanlis.ToString();
-     pictureBox2.Visible = true; // yanlış cevap verilmesi durumunda yanlış kırmızı ışık.gif çalışıcak.
-    }
-    
-Yanlız burda büyük bir sorun var, mesela kişi yanlış bir butona bastığında abartısız şekilde sürekli yanlış sayısı artıp durur, veya doğruyu seçince oda artıp durur, bunun önüne geçmek içinse bize lazım olan kodu en üste yani lbl5.Text = btnA.Text; in üstüne yazıcaz veya aynı şekilde her şık butonunun başına yazıcaz, yazmamız gereken kod 
-
-    btnA.Enabled = false;
-    btnB.Enabled = false;
-    btnC.Enabled = false;
-    btnD.Enabled = false;
-  Bu kodu yazdığımız zaman artık bir şıkkı seçtiğinde tüm butonlar devre dışı kalır, böylece Sonraki adlı butona basmadan o butonlara basmaları engellenir, ve sayıyı arttırmanın önünede böyle geçmiş oluruz, ama birde şöyle bir sorun var sonraki butonuna şıkları seçmedende basabiliyoruz, ve picturebox'larda buga girip sürekli aktif kalıyor, burdada şöyle bir çözüm uygularız Sonraki butonuna çift tıklayıp yine bahsettiğim gibi tüm kodların en üstüne çıkıp global alanın dışına çıkmadan önceki yere aşağıdaki kodu yazalım
-
-      btnSonraki.Enabled = false;
-      btnA.Enabled = true
-      btnB.Enabled = true
-      btnC.Enabled = true
-      btnD.Enabled = true
-      pictureBox1.Visible = false;
-      pictureBox2.Visible = false;
- Böylece artık Sonraki butonuna basınca şıklara basmadığın sürece sonraki butonu aktif olmayacak dicektim, fakat bir sorun var, bu seferde sonraki butonuda çalışmıyor şıklarda çalışmıyor, bunun içinde aşağıdaki kodu tüm şıklara a,b,c,d şıklarının içine şöyle ekleyecez.
- 
-
-    btnSonraki.Enabled = true;
-    btnA.Enabled = false
-    btnB.Enabled = false
-    btnC.Enabled = false
-    btnD.Enabled = false
-Böylece şık butonlarının içine bu kodları eklediğimizde ve şık seçtiğimizde tüm şıklar deaktif kalır sonraki butonu aktif kalır, ve sonraki butonuna basıncada şıklar aktif olur ve sonraki butonu kapanır, bu şekilde işliyor, unutmayın bu enabled kodları tüm şıkların içine girilmeli.
-
-**adım5**
-Şimdi A butonunun içine yazılan kodlar:
+Şimdi kodlara geçelim, Başlamadan önce söyleyeyim 2 tane daha extradan label ekledik label 4 ve 5 ama (name) kısmını değiştirmemize gerek yok, lakin kimseye gözükmeyecek, o kodlar sadece bazı araçların çalışmasını sağlayacak, şöyleki label 4 sorunun doğru cevabını tutucak label5'de benim vereceğim cevabı tutucak, ayrıca birşey daha yapmak istiyorum, mesela doğru  cevabı yada yanlış cevabı verdiğimde, hala a,b,c,d butonlarına basılabiliyor, bunuda eklemeyi ihmal etmemeliyiz, ayrıca sonrakine 1 kere basınca sonraki butonuda kapatılmalı abcd'den birisi seçilmediği sürecede çalışmamalı, bunuda ayarlamayı ihmal etmeyin, lakin herşey kodların içinde duruyor.
   
-   
-    btnSonraki.Enabled = true;
-    btnA.Enabled = false
-    btnB.Enabled = false
-    btnC.Enabled = false
-    btnD.Enabled = false
-    
-    label5.Text = btnA.Text; //burada label5'e btnA.Text'den gelen değeri yazdır anlamına gelen bir kod vardır.
-    if (label4.Text = label5.Text)
+     
+    using System.Reflection.Emit;
+    using System.Windows.Forms;
+    namespace Calisma5
     {
-    dogru++;
-    lblDogru.Text = dogru.ToString();
-    pictureBox1.Visible = true; // doğru cevap verilmesi durumunda doğru yeşil ışık.gif çalışıcak.
-    }
-    else 
+    public partial class Form1 : Form
     {
-    yanlis++;
-    lblYanlis.Text = yanlis.ToString();
-     pictureBox2.Visible = true;  // yanlış cevap verilmesi durumunda yanlış kırmızı ışık.gif çalışıcak.
-    }    ,
-Şimdi B şıkkına eklenicek kodları yazalım
+        public Form1()
+        {
+            InitializeComponent();
+            BtnA.Enabled = false;
+            BtnB.Enabled = false; //Burası program başlatıldığında sonraki'e basmadığım sürece butonları deaktif tutucak
+            BtnC.Enabled = false;
+            BtnD.Enabled = false;
+        }
+      int soruno = 0, dogru = 0, yanlis = 0; // Burası Global Alandır, buraya bu yazdığım kodu yazmazsak doğru ve yanlış ayrıca soruno sayısı kısır döngüye girer yani sürekli 1'de kalır 2 3 4 5 olarak yükselmez
+        private void btnSonraki_Click(object sender, EventArgs e)
+        {
+            BtnSonraki.Enabled = false;
+            soruno++;
+            LblSoruno.Text = soruno.ToString();
+           
+            if (soruno == 1)
+            {
+                richTextBox1.Text = "Cumhuriyet kaç yılında ilan edilmiştir?";
+                BtnA.Text = "1920";
+                BtnB.Text = "1921";
+                BtnC.Text = "1922";
+                BtnD.Text = "1923";
+                label4.Text = "1923";
+            }
+           
+            if (soruno == 2)
+            {
+                richTextBox1.Text = "Hangi şehir Ege bölgemizde bulunmaz?";
+                BtnA.Text = "İzmir";
+                BtnB.Text = "Balıkesir";
+                BtnC.Text = "Aydın";
+                BtnD.Text = "Manisa";
+                label4.Text = "Balıkesir";
+            }
+            if (soruno == 3)
+            {
+                richTextBox1.Text = "Son kuşlar hangi yazara aittir?";
+                BtnA.Text = "Sait Faik";
+                BtnB.Text = "Cemal Süreya";
+                BtnC.Text = "Attila İlhan";
+                BtnD.Text = "Reşat Nuri";
+                label4.Text = "Sait Faik";
+            }
+                        if (soruno == 4)
+            {
+                BtnA.Enabled = false;
+                BtnB.Enabled = false;
+                BtnC.Enabled = false;
+                BtnD.Enabled = false;
+                BtnSonraki.Enabled = false;
+                pictureBox2.Visible = true;
+                pictureBox1.Visible = true;
+                richTextBox1.Text = "";
+                BtnA.Text = "???";
+                BtnB.Text = "???";
+                BtnC.Text = "???";
+                BtnD.Text = "???";
+                label4.Text = "???";
+                BtnSonraki.Text = "Sonuçlar.";
+                richTextBox1.Text = ("Doğru:" + dogru + "\n" + "Yanlış " + yanlis + "\n" + "Uygulama Sürümü: V0.0.1" + "\n" + "Uygulama Yapımcısı: Mustafa İren " + "\n" + "Oyunu Beğendiyseniz daha fazlası Githubumda: https://github.com/Mustafairen1/Csharp_notlarim ");
 
-    btnSonraki.Enabled = true;
-    btnA.Enabled = false
-    btnB.Enabled = false
-    btnC.Enabled = false
-    btnD.Enabled = false
-    
-    label5.Text = btnB.Text;
-    if(label4.Text == label5.Text)
-    {
-    dogru++;
-    lblDogru.Text = dogru.ToString();
-    pictureBox1.Visible = true;
-    }
-     else
-    {
-     yanlis++;
-     lblYanlis.Text = yanlis.ToString();
-     picturebox2.Visible = true;
+            }
+           }
+           private void BtnA_Click(object sender, EventArgs e)
+        {
+         BtnA.Enabled = false;
+         BtnB.Enabled = false;
+         BtnC.Enabled = false;
+         BtnD.Enabled = false;
+         BtnSonraki.Enabled = true;
+         label5.Text = BtnA.Text;
+         if (label4.Text == label5.Text)
+         {
+         dogru++;
+         LblDogru.Text = dogru.ToString();
+         pictureBox1.Visible = true;
+         pictureBox2.Visible = false;
+         }
+         else
+         {
+          yanlis ++;
+          LblYanlis.Text = yanlis.ToString();
+          pictureBox2.Visible = true;
+          pictureBox1.Visible = false;
+         }
+         private void BtnB_Click(object sender, EventArgs e)
+        {
+                    BtnA.Enabled = false;
+            BtnB.Enabled = false;
+            BtnC.Enabled = false;
+            BtnD.Enabled = false;
+            BtnSonraki.Enabled = true;
+
+            label5.Text = BtnB.Text;
+            if (label4.Text == label5.Text)
+            {
+                dogru++;
+                LblDogru.Text = dogru.ToString();
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = false;
+            }
+            else
+            {
+                yanlis++;
+                LblYanlis.Text = yanlis.ToString();
+                pictureBox2.Visible = true;
+                pictureBox1.Visible = false;
+        }
+        
+        }
+      }
      }
-Şimdi C şıkkına girilecek kodları yazalım.
-
-    btnSonraki.Enabled = true;
-    btnA.Enabled = false
-    btnB.Enabled = false
-    btnC.Enabled = false
-    btnD.Enabled = false
-    
-    label5.Text = btnC.Text;
-    if(label4.Text == label5.Text)
-    {
-    dogru++;
-    lblDogru.Text = dogru.ToString();
-    pictureBox1.Visible = true;
     }
-     else
-Şimdi D şıkkına girilecek kodları yazalım.
 
-    btnSonraki.Enabled = true;
-    btnA.Enabled = false
-    btnB.Enabled = false
-    btnC.Enabled = false
-    btnD.Enabled = false
-    
-    label5.Text = btnD.Text;
-    if(label4.Text == label5.Text)
-    {
-    dogru++;
-    lblDogru.Text = dogru.ToString();
-    pictureBox1.Visible = true;
-    }
-     else
-
- 
-##### DipNot:
+##### DipNot:		
 Burda bir dipnot düşmek istiyorum, (name) bölümünde türkçe karakter kullanmaktan kaçının, bazı sorunlar çıkabilir, mesela lblYanlis yerine lblYanlış yazarsanız kodlar hata verebilir, veya çalışmayabilir c# evrensel bir dildir, fakat türkçe karakterlere normalde destek vermez, bu yüzden yaparkan dikkatli yapınız.
-### 26. Proje - Bilgi Yarışması / 2
-(25.'nin devamı ,fakat sadece kapanış içerdiği için yazacak birşey yok.) karar yapıları bitti.
 
 ## 5. Döngüler
 Devam edecek.

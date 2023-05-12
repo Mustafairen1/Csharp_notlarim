@@ -1,0 +1,17 @@
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\bin\Debug\net6.0-windows\Calisma6.exe
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\bin\Debug\net6.0-windows\Calisma6.deps.json
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\bin\Debug\net6.0-windows\Calisma6.runtimeconfig.json
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\bin\Debug\net6.0-windows\Calisma6.dll
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\bin\Debug\net6.0-windows\Calisma6.pdb
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.csproj.AssemblyReference.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.Form1.resources
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.csproj.GenerateResource.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.AssemblyInfoInputs.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.AssemblyInfo.cs
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.csproj.CoreCompileInputs.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.dll
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\refint\Calisma6.dll
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.pdb
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\Calisma6.genruntimeconfig.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma6\Calisma6\obj\Debug\net6.0-windows\ref\Calisma6.dll

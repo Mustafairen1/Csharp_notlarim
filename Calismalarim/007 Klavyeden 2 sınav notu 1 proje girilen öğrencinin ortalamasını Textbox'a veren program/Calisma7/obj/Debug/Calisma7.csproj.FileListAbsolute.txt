@@ -1,0 +1,11 @@
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.csproj.AssemblyReference.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.Form1.resources
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.Properties.Resources.resources
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.csproj.GenerateResource.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.csproj.CoreCompileInputs.cache
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\bin\Debug\Calisma7.exe.config
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\bin\Debug\Calisma7.exe
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\bin\Debug\Calisma7.pdb
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.exe
+C:\Users\Jigmonetas\Desktop\yayınlanacak ödevler\Calisma7\Calisma7\obj\Debug\Calisma7.pdb

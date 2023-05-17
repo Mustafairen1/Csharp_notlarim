@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calisma8", "Calisma8\Calisma8.csproj", "{7BC9BC24-129F-4D5E-89D0-7AF9B5211305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BC9BC24-129F-4D5E-89D0-7AF9B5211305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC9BC24-129F-4D5E-89D0-7AF9B5211305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC9BC24-129F-4D5E-89D0-7AF9B5211305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC9BC24-129F-4D5E-89D0-7AF9B5211305}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF156BCF-E3DD-4904-8E4E-EC70FBF9E722}
+	EndGlobalSection
+EndGlobal

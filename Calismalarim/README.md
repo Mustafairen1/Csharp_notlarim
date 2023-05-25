@@ -1,4 +1,4 @@
-#Güncelleme notları:
+# Güncelleme notları:
 
 
 #### 001 Siteadi.com Yetkilli alim formu (Hazir, fakat guncellenebilir.)

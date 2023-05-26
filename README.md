@@ -1,4 +1,5 @@
 
+
 # 1. 2022 güncellemesi içeriği
 ## 1. 2022 güncellemesi içeriği
 Müfredat boyunca yeni proje oluşturduğunuz zaman sağ tarafında  (.net framework) işlemi yapacağız.
@@ -1084,4 +1085,7 @@ Bu seferde sayıyı 2 şer arttıralım, bunun için 3'cü adımdaki kodu kopyal
 Böylece bu işlemlerle 1 3 4 5 6 7 8 9 10'u listbox'a yazmış olduk, neden 2'yi yazmadığını zaten kod içerisindeki açıklamadan anlarsınız.
 
 ### 29. BreakPoint kullanımı
-devam ediyor 21:09 - 26 mayıs 2023
+BreakPoint hatalı olan kodları daha kolay bulmanıza yarayan bir özelliktür mesela, kodun en sol tarafındaki gri alan var oraya tıkladığınızda mesela nerde hata olabiliceğini vesaire ön görebiliyor.
+
+### 30. Pratik Örnek - Ardışık Sayı Toplamları
+hmm

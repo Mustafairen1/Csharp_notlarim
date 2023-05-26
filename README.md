@@ -1017,4 +1017,71 @@ Sonrada 1 tane kırmızı yanlış .gif bulup 2 ci picturebox'a giriyoruz stretc
 Burda bir dipnot düşmek istiyorum, (name) bölümünde türkçe karakter kullanmaktan kaçının, bazı sorunlar çıkabilir, mesela lblYanlis yerine lblYanlış yazarsanız kodlar hata verebilir, veya çalışmayabilir c# evrensel bir dildir, fakat türkçe karakterlere normalde destek vermez, bu yüzden yaparkan dikkatli yapınız.
 
 ## 5. Döngüler
-Devam edecek.
+### 27.Döngü kavramı -döngü çeşitleri
+##### döngüler nedir?
+Tekrar gerektiren durumlarda kullanılan bir araçtır. 
+
+**Örnek1:**
+ 1000 kişilik personel listeniz var diyelim, her bir personele 1 den başlayıp 1000'e kadar sayı vermek istiyorsunuz işte burda gidipte tek tek 1 şu 2 şu 3 şu demek yerine burda bir döngüye alıp bütün personellere sayı verebilirsiniz.
+
+**Örnek2:**
+bir biri ardına gelen sayıyı veya değeri toplamak için kullanabiliriz mesela 1 ile 10 arasında sayıyı toplamak için yada 1 ile 10 arasındaki sayıyı listelemek için yada veri tabanı içindeki kayıtları okutmak için bazen döngüye ihtiyaç duyuyoruz.
+#### Döngüleri ayırmak
+For
+While
+do /While
+Foreach
+olarak 4 farklı döngü vardır.
+
+### 28. For Döngüsü
+#### For döngüsü nedir?
+For döngüsü 3 temel parametre üzerine kurulu
+For(1;2;3)
+Bu parametreler birbirine noktalı virgülle ayrılıyor, bu parametreler nelerdir?
+1:  "Başlangıç Yani döngü kaçtan başlayacak"
+2: Bitiş "Yani döngün kaçta biticek"
+3: Artış / Azalış "Yani döngün kaçar kaçar artacak veya kaçar kaçar azalıcak."
+
+**Adım1**
+Donguler isminde 1 proje oluşturalım windows forms .net framework olarak.
+
+**Adım2**
+Şimdi 1 tane buton ve listbox ekleyelim, amacımızda şu olsun, butona bastığımız zaman listbox'a 10 defa Merhaba Ankara eklesin, buton ismini yazdır yapıp üzerine çift tıklayalım, ve kodları yazalım.
+
+    int i;
+    for(i=1;i<=10;i++) //i=1 1'den başlasın İ<=10 10 olana kadar saycak i++  1 arttır demek
+    {
+    //Peki napıcak sürekli bu i?
+    listBox1.Items.Add ("Merhaba Ankara") //Her defasında yazısını listbox'a ekleyecek.
+    // böylece ne oldu beni alt alta 10 defa
+    //listBox1.Items.Add ("Merhaba Ankara")
+    //listBox1.Items.Add ("Merhaba Ankara")
+    //listBox1.Items.Add ("Merhaba Ankara") 
+    //yazmaktan kurtardı, sadece bitiş değerini değiştirip örneğin <=100 yaptığımız zaman 100 kere listbox'a yazıcak.
+    //Peki mesela her döngünün başında 1.Merhaba ankara 2.Merhaba ankara 3.Merhaba ankara  yazması için ne yapmalıyız? 
+    //listBox1.Items.Add ("Merhaba Ankara") deki ("") çemberinin içinde (i+ "Merhaba Ankara") yani i'nin değeri artı Merhaba ankara yaparak yapabiliriz.
+    }
+    
+**Adım3**
+  Mesela bu seferde listbox'a 1'den 10'a kadar yazdıran program yapalım, adım 2'deki araçları falan değişmemize gerek yoktur.
+  
+
+    //for yazdıktan sonra tab tıklarsak for (int i = 0; i < length; i++) oluşur böylece döngü kalıbını bize hazır şekilde verir, tek yapmamız gereken 0'ı 1 yapıp length'yi 11 yapmamız yetiyor. 
+    for (int i = 0; i < 11; i++) //burdaki ayar 10'u al 11'i alma olarak ayarlanmıştır.
+    {
+    listBox1.Items.Add(i);
+    }
+    //Böylede butona bastığımızda 1 2 3 4 5 6 7 8 9 10'u listbox'a yazmış olduk
+**Adım4**
+Bu seferde sayıyı 2 şer arttıralım, bunun için 3'cü adımdaki kodu kopyalayabiliriz.
+
+    //burdaki terk fark i++ yerine i+= kullanmamız.
+    for (int i = 0; i < 11; i+=1) // 1 i'yi 1 1 arttır 2 i yi 2 2 arttır demektir.
+    { 
+    listBox1.Items.Add(i); 
+    }
+
+Böylece bu işlemlerle 1 3 4 5 6 7 8 9 10'u listbox'a yazmış olduk, neden 2'yi yazmadığını zaten kod içerisindeki açıklamadan anlarsınız.
+
+### 29. BreakPoint kullanımı
+devam ediyor 21:09 - 26 mayıs 2023

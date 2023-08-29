@@ -1,0 +1,17 @@
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.exe.config
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.exe
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.pdb
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.csproj.AssemblyReference.cache
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana_iş_ve_eleman_ilanları___Moderatör_başvuru_formu.Properties.Resources.resources
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.csproj.GenerateResource.cache
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.csproj.CoreCompileInputs.cache
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.exe
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.pdb
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana_iş_ve_eleman_ilanları___Moderatör_başvuru_formu.Form1.resources
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\System.Buffers.dll
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\System.ValueTuple.dll
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\System.Buffers.xml
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\bin\Debug\System.ValueTuple.xml
+C:\Users\Jigmonetas\source\repos\Adana iş ve eleman ilanları - Moderatör başvuru formu\obj\Debug\Adana iş ve eleman ilanları - Moderatör başvuru formu.csproj.CopyComplete
